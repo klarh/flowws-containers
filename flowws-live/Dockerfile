@@ -17,7 +17,7 @@ USER user
 WORKDIR /home/user/work
 
 RUN python -m pip install --no-cache-dir \
-        flowws-analysis==0.6.0 \
+        flowws-analysis==0.7.0 \
         flowws-freud==0.3.0 \
         flowws-unit-cell==0.1.0 \
         freud-analysis==2.2.0 \
