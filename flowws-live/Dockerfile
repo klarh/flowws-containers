@@ -20,7 +20,7 @@ RUN python -m pip install --no-cache-dir \
         flowws-analysis \
         flowws-freud \
         flowws-unit-cell \
-        freud-analysis \
+        freud-analysis==2.5.1 \
         garnett \
         gtar \
         hoomd-flowws \
