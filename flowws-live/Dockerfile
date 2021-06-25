@@ -3,7 +3,7 @@ FROM mspells/plato-live:latest
 USER root
 WORKDIR /
 
-ENV hoomd_ver=hoomd-v2.9.0
+ENV hoomd_ver=hoomd-v2.9.6
 RUN wget https://glotzerlab.engin.umich.edu/Downloads/hoomd/${hoomd_ver}.tar.gz && \
     tar xf ${hoomd_ver}.tar.gz && \
     mkdir ${hoomd_ver}/build && \
@@ -17,14 +17,14 @@ USER user
 WORKDIR /home/user/work
 
 RUN python -m pip install --no-cache-dir \
-        flowws-analysis==0.7.0 \
-        flowws-freud==0.3.0 \
-        flowws-unit-cell==0.1.0 \
-        freud-analysis==2.2.0 \
-        garnett==0.7.1 \
-        gtar==1.0.1 \
-        hoomd-flowws==0.1.0 \
-        pyriodic-aflow==0.1.1
+        flowws-analysis \
+        flowws-freud \
+        flowws-unit-cell \
+        freud-analysis \
+        garnett \
+        gtar \
+        hoomd-flowws \
+        pyriodic-aflow
 
 RUN git clone https://github.com/klarh/flowws-examples
 
